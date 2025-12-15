@@ -1,0 +1,194 @@
+/* Reset de margenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base para todo el documento */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+header .max-w-7xl {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+header p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: -0.25rem;
+}
+
+/* Stepper visual */
+header ol {
+  display: flex;
+  gap: 0.75rem;
+}
+
+header li {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  background-color: #d1fae5;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  color: #0f172a;
+}
+
+/* Formulario */
+section {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 28px -14px rgba(2, 6, 23, 0.08);
+}
+
+section h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 1rem;
+  background-color: #10b981;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #047857;
+}
+
+/* Resumen del pedido (Right side) */
+aside {
+  position: sticky;
+  top: 24px;
+}
+
+aside .section {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+aside .section dl {
+  font-size: 0.875rem;
+}
+
+aside .section dt {
+  font-weight: 500;
+  color: #6b7280;
+}
+
+aside .section dd {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+aside .section .font-semibold {
+  color: #10b981;
+}
+
+/* Botón de registrar en mobile */
+.fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 40;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid #e2e8f0;
+  padding: 16px;
+}
+
+.fixed .text-sm {
+  font-size: 0.875rem;
+}
+
+.fixed button {
+  padding: 12px 24px;
+  border-radius: 999px;
+  background-color: #10b981;
+  color: white;
+  cursor: pointer;
+}
+
+.fixed button:hover {
+  background-color: #047857;
+}
+
+/* Estilo adicional para los inputs monetarios */
+.money {
+  text-align: right;
+}
+
+/* Fondo de tarjeta */
+.fallback-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+/* Inputs básicos */
+.fallback-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+}
+
+.fallback-input:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
